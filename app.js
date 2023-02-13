@@ -157,7 +157,7 @@ const sendCart = () => {
       let time = timeConverter(new Date());
       data.time = time;
       // console.log(data);
-      sendData('index2.php', JSON.stringify(data))
+      sendData('https://github.com/4iLeRmax/registration/index2.php', JSON.stringify(data))
       .then(()=>{
         cartForm.reset();
       })
