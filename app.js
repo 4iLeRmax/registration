@@ -248,7 +248,7 @@ const dataComapre = ()=>{
       }
       getData('new.json')
       .then(json=>{
-        // console.log(data);
+        console.log(data);
         let bool;
         for(let item of json){
           if(data.mail === item.mail && data.password === item.password){
