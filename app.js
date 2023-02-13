@@ -156,8 +156,14 @@ const sendCart = () => {
       }
       let time = timeConverter(new Date());
       data.time = time;
-      // console.log(data);
-      sendData('https://github.com/4iLeRmax/registration/index2.php', JSON.stringify(data))
+//========================================================================//
+
+
+      console.log('Данные которые отправляются в json: ' + data);
+
+
+//========================================================================//
+      sendData('index2.php', JSON.stringify(data))
       .then(()=>{
         cartForm.reset();
       })
@@ -246,9 +252,23 @@ const dataComapre = ()=>{
       for(const[key, value] of formData){
         data[key] = value.trim();
       }
+//========================================================================//
+
+
+console.log('Данные которые сравниваем с существующими в json' + data);
+
+
+//========================================================================//
       getData('new.json')
       .then(json=>{
-        console.log(data);
+        // console.log(data);
+//========================================================================//
+
+
+console.log('Данные которые получем с json: ' + json);
+
+      
+//========================================================================//
         let bool;
         for(let item of json){
           if(data.mail === item.mail && data.password === item.password){
