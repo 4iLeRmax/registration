@@ -1,0 +1,227 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* .wrapper{} */
+.registration__wrap{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0, .6);;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background .3s;
+}
+.registration__wrap.hide{
+  display: none;
+}
+.registration__cards{
+  background-color: #fff;
+  width: 600px;
+  height: 377px;
+  overflow: hidden;
+  box-shadow: 10px 10px 30px rgba(0,0,0, .3);
+  /* margin: 100px auto; */
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 4;
+  opacity: 1;
+}
+.card{
+  background-color: #fff;
+  width: 100%;
+  height: 377px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 10px 30px rgba(0,0,0, .3);
+  padding: 50px 100px;
+  /* position: relative; */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: top .5s;
+}
+.card.hide{
+  top: -100%;
+  z-index: -1;
+}
+.correct{
+  justify-content: center;
+}
+.correct svg{
+  stroke: green;
+  width: 80px;
+  height: 80px;
+}
+.enterAcc{
+  justify-content: center;
+}
+.enterAcc svg{
+  width: 80px;
+  height: 80px;
+}
+.correctEnter{
+  stroke: rgb(0, 128, 0);
+}
+.errorEnter{
+  stroke: rgb(250, 0, 0);
+}
+.signUp{
+  /* display: none; */
+  /* background-color: red; */
+}
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.close::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #E0BEA2;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.close::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #E0BEA2;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.card__title{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__input{
+  border: 1px solid rgb(37, 37, 37, .5);
+  padding: 0 20px;
+  width: 100%;
+  height: 47px;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  transition: border .15s;
+}
+.form__input.active{
+  /* border: 1px solid #E0BEA2;  */
+}
+.form__input.error{
+  border: 1px solid red;
+}
+.form__input::placeholder{
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 19px;
+  color: rgb(37, 37, 37, .5);  
+}
+.input__wrap{
+  width: 100%;
+  position: relative;
+}
+.password img{
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 15px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.wrong{
+  position: absolute;
+  bottom: -20%;
+  display: none;
+}
+.empty{
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 18px;
+  color: rgb(37, 37, 37, .5);
+  position: absolute;
+  /* top: -9px; */
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 5px;
+  background: #fff;
+  transition: top .15s, transform .15s, left .15s, font-size .15s, color .15s;
+}
+.empty.active{
+  top: -9px;
+  transform: translateY(0);
+  left: 5px;
+  z-index: 2;
+  font-size: 12px;
+}
+.empty.error{
+  top: -9px;
+  transform: translateY(0);
+  left: 5px;
+  z-index: 2;
+  font-size: 12px;
+  color: red;
+}
+
+
+button{
+  margin-top: 40px;
+  width: 100%;
+  color: #fff;
+  padding: 16px 0;
+  background: #E0BEA2;
+  border: 0;
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.links{
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 200px);
+}
+.link{
+  cursor: pointer;
+}
+.account__btn{
+  padding: 15px 35px;
+  border-radius: 2px;
+  background: #E0BEA2;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}

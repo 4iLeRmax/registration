@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <h1>shvdifvdbfb</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem a doloremque neque corporis doloribus quod porro corrupti optio, dolor, repellendus beatae modi, inventore autem nisi. Tempore dolore repellendus aliquid et.</p>
+    <div class="account__btn">User</div>
+    <!-- <div class="registration__wrap"> -->
+    <div class="registration__wrap hide">
+      <div class="registration__cards">
+        
+        <div class="card signUp">
+          <div class="close"></div>
+          <div class="card__title">Регистрация</div>
+          <form class="form form__signUp">
+
+            <div class="input__wrap mail">
+              <input type="text" name="mail" class="form__input sign email">
+              <div class="empty emptyEmail">Ваш e-mail*</div>
+            </div>
+
+            <div class="input__wrap password">
+              <input type="password" name="password" class="form__input sign pass">
+              <img src="Frame.svg">
+              <div class="empty emptyPassword">Ваш пароль*</div>
+              <div class="wrong wrongPassword">Пароль должен содержать латинские буквы a-z верхнего и ниженего регистра, цифры 0-9</div>
+            </div>
+
+            <button type="submit">Продолжить</button>
+          </form>
+          <div class="links">
+            <div class="link"><u>Есть аккаунт</u></div>
+          </div>
+        </div>
+        <div class="card logIn hide">
+          <div class="close"></div>
+          <div class="card__title">Авторизация</div>
+          <form class="form form__logIn">
+
+            <div class="input__wrap mail">
+              <input type="text" name="mail" class="form__input login email">
+              <div class="empty emptyEmail">Ваш e-mail*</div>
+            </div>
+
+            <div class="input__wrap password">
+              <input type="password" name="password" class="form__input login pass">
+              <img src="Frame.svg">
+              <div class="empty emptyPassword">Ваш пароль*</div>
+              <div class="wrong wrongPassword">Пароль должен содержать латинские буквы a-z верхнего и ниженего регистра, цифры 0-9</div>
+            </div>
+
+            <button type="submit">Войти</button>
+          </form>
+          <div class="links">
+            <div class="link"><u>Забыли пароль</u></div>
+            <div class="link"><u>Нет аккаунта?</u></div>
+          </div>
+        </div>
+        <div class="card correct hide">
+          <svg id="check1" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Checkmark Circle</title>
+          <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32"/>
+          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 176L217.6 336 160 272"/></svg>
+          <span>Успешно</span>
+        </div>
+        <div class="card enterAcc correctEnter hide">
+          <svg id="check" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Checkmark Circle</title>
+            <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32"/>
+            <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 176L217.6 336 160 272"/>
+          </svg>
+          <span>Аккаунт найден</span>
+          <!-- <svg id="check" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Checkmark</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/>
+          </svg> -->
+        </div>
+        <div class="card enterAcc errorEnter hide">
+          <svg id="closeCheck" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Close Circle</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320L192 192M192 320l128-128"/>
+          </svg>
+          <span>Аккаунт не найден</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js" integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
