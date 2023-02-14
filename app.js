@@ -163,7 +163,7 @@ const sendCart = () => {
 
 
 //========================================================================//
-      sendData('index2.php', JSON.stringify(data))
+      sendData('https://4ilermax.github.io/registration/index2.php', JSON.stringify(data))
       .then(()=>{
         cartForm.reset();
       })
@@ -261,7 +261,7 @@ console.log('Данные которые сравниваем с существ�
 //========================================================================//
       getData('new.json')
       .then(json=>{
-        // console.log(data);
+        console.log(data);
 //========================================================================//
 
 
